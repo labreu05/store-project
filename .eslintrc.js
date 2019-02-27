@@ -1,38 +1,30 @@
 module.exports = {
-  parser: "babel-eslint",
-  extends: ["airbnb", "plugin:prettier/recommended"],
+  parser: 'babel-eslint',
+  extends: ['airbnb', 'plugin:prettier/recommended'],
   env: {
     browser: true,
     es6: true,
-    jest: true
+    jest: true,
   },
-  plugins: ["react", "jsx-a11y", "prettier"],
+  plugins: ['react', 'jsx-a11y', 'prettier'],
   globals: {
-    graphql: false
+    graphql: false,
   },
   parserOptions: {
-    sourceType: "module",
+    sourceType: 'module',
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   rules: {
-    "max-len": ["error", 120],
-    "react/jsx-filename-extension": [
-      "error",
+    quotes: ['error', 'single'],
+    'max-len': ['error', 120],
+    'react/jsx-filename-extension': [
+      'error',
       {
-        extensions: [".js"]
-      }
+        extensions: ['.js'],
+      },
     ],
-    "prettier/prettier": [
-      "error",
-      {
-        singleQuote: true,
-        trailingComma: "es5",
-        semi: true,
-        printWidth: 120
-      }
-    ]
-  }
+  },
 };

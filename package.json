@@ -8,9 +8,6 @@
     "start": "next start",
     "format": "prettier --write '*.{js,jsx}'"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "dependencies": {
     "next": "^7.0.2",
     "react": "^16.7.0",
