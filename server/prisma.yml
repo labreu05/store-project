@@ -1,0 +1,5 @@
+endpoint: https://us1.prisma.sh/leonardo-abreu/store-project/dev
+datamodel: datamodel.prisma
+hooks:
+  post-deploy:
+      - graphql get-schema -p prisma
