@@ -1,4 +1,4 @@
-endpoint: https://us1.prisma.sh/leonardo-abreu/store-project/dev
+endpoint: ${env:FRONTEND_URL}
 datamodel: datamodel.prisma
 hooks:
   post-deploy:
