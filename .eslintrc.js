@@ -5,6 +5,7 @@ module.exports = {
     browser: true,
     es6: true,
     jest: true,
+    commonjs: true,
   },
   plugins: ['react', 'jsx-a11y', 'prettier'],
   globals: {
@@ -26,5 +27,8 @@ module.exports = {
         extensions: ['.js'],
       },
     ],
+    'react/react-in-jsx-scope': 0,
+    'react/prop-types': 0,
+    'jsx-a11y/anchor-is-valid': 0,
   },
 };

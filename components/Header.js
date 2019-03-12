@@ -1,16 +1,19 @@
+import AppBar from '@material-ui/core/AppBar';
+import { withStyles } from '@material-ui/core/styles';
 import Nav from './Nav';
 
-const Header = () => (
-  <div>
-    <div className="bar">
-      <a href="">Store Project</a>
+const styles = {
+  root: {
+    flexGrow: 1,
+  },
+};
+
+const Header = ({ classes }) => (
+  <div className={classes.root}>
+    <AppBar position="static" color="primary">
       <Nav />
-    </div>
-    <div className="sub-bar">
-      <p>Search</p>
-    </div>
-    <div>Cart</div>
+    </AppBar>
   </div>
 );
 
-export default Header;
+export default withStyles(styles)(Header);
